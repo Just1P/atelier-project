@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+import ConfirmationPage from "./components/ConfirmationPage";
 import "./App.css";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleNext = () => {
     if (validateStep(step)) {
@@ -31,8 +33,9 @@ const App = () => {
   };
 
   const handleSubmit = () => {
-    console.log("Submitting all form data:", formData);
-    alert("Form Submitted!");
+    if (validateStep(step)) {
+      setIsSubmitted(true);
+    }
   };
 
   const updateFormData = (newData: Partial<typeof formData>) => {
@@ -42,13 +45,8 @@ const App = () => {
     }));
   };
 
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
   const validateStep = (currentStep: number) => {
-    let newErrors: { [key: string]: string } = {};
+    const newErrors: { [key: string]: string } = {};
 
     if (currentStep === 1) {
       if (!formData.accountType) {
@@ -75,22 +73,33 @@ const App = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className="app-container">
-      <Header step={step} totalSteps={totalSteps} />
-      <Form
-        step={step}
-        formData={formData}
-        updateFormData={updateFormData}
-        errors={errors}
-      />
-      <Footer
-        step={step}
-        totalSteps={totalSteps}
-        handleNext={handleNext}
-        handlePrevious={handlePrevious}
-        handleSubmit={handleSubmit}
-      />
+      {isSubmitted ? (
+        <ConfirmationPage name={formData.name} email={formData.email} />
+      ) : (
+        <>
+          <Header step={step} totalSteps={totalSteps} />
+          <Form
+            step={step}
+            formData={formData}
+            updateFormData={updateFormData}
+            errors={errors}
+          />
+          <Footer
+            step={step}
+            totalSteps={totalSteps}
+            handleNext={handleNext}
+            handlePrevious={handlePrevious}
+            handleSubmit={handleSubmit}
+          />
+        </>
+      )}
     </div>
   );
 };
