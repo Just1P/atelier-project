@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-image: url("../assets/Rectangle2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  border-radius: 8px;
+  background: white;
+}
+
+header,
+main,
+footer {
+  margin-bottom: 20px;
+}
+
+p {
+  color: #cccddf;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: Poppins;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,3 @@
-import "../global-css/components-css/Header.css";
-
 type FooterProps = {
   step: number;
   totalSteps: number;

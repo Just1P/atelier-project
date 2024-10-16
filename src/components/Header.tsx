@@ -1,4 +1,4 @@
-import "../global-css/components-css/Header.css";
+import "./component-css/Header.css";
 
 type HeaderProps = {
   step: number;
@@ -11,16 +11,15 @@ const Header = ({ step, totalSteps }: HeaderProps) => {
     for (let i = 1; i <= totalSteps; i++) {
       indicators.push(
         <div key={i} className="step-container">
-          <div className={`step-indicator ${i <= step ? "active-step" : ""}`}>
+          <div className={`line`} />
+          <div className={`step-indicator ${i === step ? "active-step" : ""}`}>
             <span
-              className={`step-text ${i <= step ? "active-step-text" : ""}`}
+              className={`step-text ${i === step ? "active-step-text" : ""}`}
             >
               {i}
             </span>
           </div>
-          {i < totalSteps && (
-            <div className={`line ${i < step ? "active-line" : ""}`} />
-          )}
+          <div className={`line`} />
         </div>
       );
     }
@@ -29,8 +28,10 @@ const Header = ({ step, totalSteps }: HeaderProps) => {
 
   return (
     <header>
-      <h1>Registration Form</h1>
-      <p>Please fill out this form with the required information</p>
+      <div className="header">
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+      </div>
       {renderStepIndicator()}
     </header>
   );

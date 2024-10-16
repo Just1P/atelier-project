@@ -1,7 +1,7 @@
 .indicator-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .step-container {
@@ -10,31 +10,38 @@
 }
 
 .step-indicator {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-color: #ccc;
+  border: solid 1px #cccddf;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: bold;
 }
 
 .active-step {
-  background-color: #4caf50;
+  background-color: #c87ee2;
+  border: none;
 }
 
 .step-text {
-  color: #fff;
+  color: #cccddf;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.active-step-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .line {
   width: 50px;
-  height: 5px;
-  background-color: #ccc;
-}
-
-.active-line {
-  background-color: #4caf50;
+  height: 2px;
+  background-color: #cccddf;
 }
 
 .button-container {
@@ -61,4 +68,4 @@ button {
 .done-button {
   background-color: #007bff;
   color: white;
-}/*# sourceMappingURL=Header.css.map */
+} /*# sourceMappingURL=Header.css.map */
