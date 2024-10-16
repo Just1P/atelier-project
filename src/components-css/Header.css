@@ -1,0 +1,64 @@
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step-container {
+  display: flex;
+  align-items: center;
+}
+
+.step-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-step {
+  background-color: #4caf50;
+}
+
+.step-text {
+  color: #fff;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: #ccc;
+}
+
+.active-line {
+  background-color: #4caf50;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button {
+  background-color: #f0f0f0;
+}
+
+.next-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.done-button {
+  background-color: #007bff;
+  color: white;
+}
