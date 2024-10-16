@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import ConfirmationPage from "./components/ConfirmationPage";
-import "./App.css";
+import "./global-css/App.css";
 
 const App = () => {
   const [step, setStep] = useState(1);
