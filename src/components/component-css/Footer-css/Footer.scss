@@ -1,0 +1,51 @@
+// src/components/component-css/Footer-css/Footer.scss
+
+$active-color: #a785f7; // Couleur utilisée pour les étapes
+$previous-text-color: #cccddf;
+
+footer {
+  background-color: #fff; // Optionnel, si le footer doit avoir une couleur de fond spécifique
+  padding-top: 35px;
+  display: flex;
+  justify-content: flex-end; // Aligne les boutons à droite
+  border-radius: 0 0 8px 8px;
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .next-button,
+  .done-button {
+    background-color: $active-color;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($active-color, 10%);
+    }
+  }
+
+  .previous-button {
+    background-color: transparent;
+    color: $previous-text-color;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: lighten($previous-text-color, 10%);
+    }
+  }
+}

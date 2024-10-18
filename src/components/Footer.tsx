@@ -1,3 +1,5 @@
+import "../components/component-css/Footer-css/Footer.css";
+
 type FooterProps = {
   step: number;
   totalSteps: number;

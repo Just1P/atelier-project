@@ -1,0 +1,42 @@
+footer {
+  background-color: #fff;
+  padding-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 8px 8px;
+}
+footer .button-container {
+  display: flex;
+  gap: 10px;
+}
+footer .next-button,
+footer .done-button {
+  background-color: #a785f7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+footer .next-button:hover,
+footer .done-button:hover {
+  background-color: #cab5fa;
+}
+footer .previous-button {
+  background-color: transparent;
+  color: #cccddf;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer .previous-button:hover {
+  color: #ebecf3;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,4 +1,6 @@
-import React from "react";
+import voidCard from "../../assets/images/card-void.jpg";
+import completedCard from "../../assets/images/card-completed.jpg";
+import "../component-css/Form1-css/Form1.css";
 
 type Step1FormProps = {
   formData: any;
@@ -7,36 +9,57 @@ type Step1FormProps = {
 };
 
 const Step1Form = ({ formData, handleChange, errors }: Step1FormProps) => {
+  const isPersonalSelected = formData.accountType === "personal";
+  const isBusinessSelected = formData.accountType === "business";
+
+  const toggleSelection = (accountType: string) => {
+    if (formData.accountType === accountType) {
+      // Si l'utilisateur clique à nouveau sur une option déjà sélectionnée, désélectionner
+      handleChange({
+        target: { name: "accountType", value: "" },
+      } as any);
+    } else {
+      handleChange({
+        target: { name: "accountType", value: accountType },
+      } as any);
+    }
+  };
+
   return (
-    <>
-      <h2>Je suis à l'étape 1</h2>
-      <p>Veuillez choisir un type de compte :</p>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="accountType"
-            value="Personal Account"
-            checked={formData.accountType === "Personal Account"}
-            onChange={handleChange}
-          />
-          Personal Account
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="accountType"
-            value="Business Account"
-            checked={formData.accountType === "Business Account"}
-            onChange={handleChange}
-          />
-          Business Account
-        </label>
+    <div className="account-selection-container">
+      <p className="form-title">Choose your account type</p>
+      <div
+        className={`account-option ${isPersonalSelected ? "selected" : ""}`}
+        onClick={() => toggleSelection("personal")}
+      >
+        <img
+          src={isPersonalSelected ? completedCard : voidCard}
+          alt="Personal Account"
+          className="account-image"
+        />
+        <div className="account-details">
+          <h3>Personal Account</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
       </div>
-      {errors.accountType && (
-        <p style={{ color: "red" }}>{errors.accountType}</p>
-      )}
-    </>
+
+      <div
+        className={`account-option ${isBusinessSelected ? "selected" : ""}`}
+        onClick={() => toggleSelection("business")}
+      >
+        <img
+          src={isBusinessSelected ? completedCard : voidCard}
+          alt="Business Account"
+          className="account-image"
+        />
+        <div className="account-details">
+          <h3>Business Account</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+      </div>
+
+      {errors.accountType && <p className="error-text">{errors.accountType}</p>}
+    </div>
   );
 };
 

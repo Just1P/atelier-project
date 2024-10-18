@@ -16,6 +16,14 @@ body {
   min-height: 100vh;
 }
 
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  text-align: left;
+}
+
 .app-container {
   width: 480px;
   display: flex;
@@ -23,10 +31,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 32px;
+  padding: 32px 32px 0 32px;
   border-radius: 8px;
   background: white;
   box-sizing: border-box;
+
+  &.no-background {
+    background-color: transparent; // Retire le fond uniquement pour la page de confirmation
+  }
 }
 
 header,

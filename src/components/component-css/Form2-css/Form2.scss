@@ -1,0 +1,47 @@
+// src/components/component-css/Step2Form.scss
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-size: 1em;
+    color: #666;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #a785f7; // La couleur que tu as choisie pour les étapes
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  .error-text {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+}

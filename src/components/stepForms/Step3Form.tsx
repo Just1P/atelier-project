@@ -1,4 +1,4 @@
-import React from "react";
+import "../component-css/Form3-css/Form3.css";
 
 type Step3FormProps = {
   formData: any;
@@ -9,45 +9,46 @@ type Step3FormProps = {
 
 const Step3Form = ({ formData, handleChange }: Step3FormProps) => {
   return (
-    <>
-      <h2>Je suis à l'étape 3</h2>
-      <p>Veuillez entrer vos informations supplémentaires :</p>
-      <div>
-        <label>
-          Age:
-          <input
-            type="number"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            placeholder="Âge"
-          />
-        </label>
+    <div className="form-container">
+      <div className="form-group">
+        <label htmlFor="age">Age</label>
+        <input
+          type="text"
+          id="age"
+          name="age"
+          value={formData.age}
+          onChange={handleChange}
+          placeholder="John Doe"
+          className="form-input"
+        />
       </div>
-      <div>
-        <label>
-          Area of interest:
-          <input
-            type="text"
-            name="interest"
-            value={formData.interest}
-            onChange={handleChange}
-            placeholder="Centre d'intérêt"
-          />
-        </label>
+
+      <div className="form-group">
+        <label htmlFor="interest">Area of interest</label>
+        <input
+          type="text"
+          id="interest"
+          name="interest"
+          value={formData.interest}
+          onChange={handleChange}
+          placeholder="Frontend"
+          className="form-input"
+        />
       </div>
-      <div>
-        <label>
-          Bio/Description:
-          <textarea
-            name="bio"
-            value={formData.bio}
-            onChange={handleChange}
-            placeholder="Parlez de vous..."
-          />
-        </label>
+
+      <div className="form-group">
+        <label htmlFor="bio">Bio / Description</label>
+        <textarea
+          id="bio"
+          name="bio"
+          value={formData.bio}
+          onChange={handleChange}
+          placeholder="Lorem ipsum"
+          className="form-textarea"
+          rows={4}
+        ></textarea>
       </div>
-    </>
+    </div>
   );
 };
 
