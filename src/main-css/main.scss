@@ -35,10 +35,6 @@ label {
   @include button-base;
   background: white;
   box-sizing: border-box;
-
-  &.no-background {
-    background-color: transparent; // Retire le fond uniquement pour la page de confirmation
-  }
 }
 
 header,

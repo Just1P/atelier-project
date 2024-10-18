@@ -1,13 +1,11 @@
-// src/components/component-css/Footer-css/Footer.scss
-
-$active-color: $primary-color; // Couleur utilisée pour les étapes
+$active-color: $primary-color;
 $previous-text-color: $text-light;
 
 footer {
-  background-color: #fff; // Optionnel, si le footer doit avoir une couleur de fond spécifique
+  background-color: #fff;
   padding-top: 35px;
   display: flex;
-  justify-content: flex-end; // Aligne les boutons à droite
+  justify-content: flex-end;
   border-radius: 0 0 8px 8px;
 
   .button-container {

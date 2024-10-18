@@ -1,5 +1,3 @@
-// src/components/component-css/Step2Form.scss
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -30,7 +28,7 @@
     transition: border-color 0.3s ease;
 
     &:focus {
-      border-color: $primary-color; // La couleur que tu as choisie pour les étapes
+      border-color: $primary-color;
       outline: none;
     }
 

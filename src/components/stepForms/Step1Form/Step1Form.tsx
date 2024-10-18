@@ -14,7 +14,6 @@ const Step1Form = ({ formData, handleChange, errors }: Step1FormProps) => {
 
   const toggleSelection = (accountType: string) => {
     if (formData.accountType === accountType) {
-      // Si l'utilisateur clique à nouveau sur une option déjà sélectionnée, désélectionner
       handleChange({
         target: { name: "accountType", value: "" },
       } as any);
