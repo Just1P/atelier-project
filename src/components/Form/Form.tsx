@@ -1,7 +1,7 @@
 import React from "react";
-import Step1Form from "./stepForms/Step1Form";
-import Step2Form from "./stepForms/Step2Form";
-import Step3Form from "./stepForms/Step3Form";
+import Step1Form from "../stepForms/Step1Form/Step1Form";
+import Step2Form from "../stepForms/Step2Form/Step2Form";
+import Step3Form from "../stepForms/Step3Form/Step3Form";
 
 type FormProps = {
   step: number;

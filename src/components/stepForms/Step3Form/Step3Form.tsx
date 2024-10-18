@@ -1,4 +1,4 @@
-import "../component-css/Form3-css/Form3.css";
+import "../Step3Form/Form3.css";
 
 type Step3FormProps = {
   formData: any;

@@ -1,4 +1,4 @@
-import "../components/component-css/Footer-css/Footer.css";
+import "./Footer.css";
 
 type FooterProps = {
   step: number;

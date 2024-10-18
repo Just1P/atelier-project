@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import Form from "./components/Form";
-import Footer from "./components/Footer";
-import ConfirmationPage from "./components/ConfirmationPage";
+import Header from "./components/Header/Header";
+import Form from "./components/Form/Form";
+import Footer from "./components/Footer/Footer";
+import ConfirmationPage from "./components/ConfirmationPage/ConfirmationPage";
 import "./main-css/main.css";
 
 const App = () => {

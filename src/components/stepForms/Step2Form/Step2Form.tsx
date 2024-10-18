@@ -1,4 +1,4 @@
-import "../component-css/Form2-css/Form2.css";
+import "../Step2Form/Form2.css";
 
 type Step2FormProps = {
   formData: any;

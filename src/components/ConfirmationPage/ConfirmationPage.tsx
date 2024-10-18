@@ -1,4 +1,4 @@
-import "./component-css/Confirmation-Page-css/Confirmation-Page.css";
+import "./Confirmation-Page.css";
 import successIcon from "../assets/images/succes-icon.png"; // Remplace par le chemin de ton icône de validation
 
 type ConfirmationPageProps = {

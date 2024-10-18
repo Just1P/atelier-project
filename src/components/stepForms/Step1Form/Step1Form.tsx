@@ -1,6 +1,6 @@
 import voidCard from "../../assets/images/card-void.jpg";
 import completedCard from "../../assets/images/card-completed.jpg";
-import "../component-css/Form1-css/Form1.css";
+import "../Step1Form/Form1.css";
 
 type Step1FormProps = {
   formData: any;
