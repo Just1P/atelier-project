@@ -23,19 +23,3 @@
   height: 143px;
   margin-bottom: 75px;
 }
-
-h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-p {
-  font-size: 16px;
-  @extend .text-light;
-  margin: 4px 0;
-}
-
-h3 {
-  margin: 0;
-}

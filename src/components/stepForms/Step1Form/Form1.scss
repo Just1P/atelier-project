@@ -27,18 +27,6 @@
     .account-details {
       display: flex;
       flex-direction: column;
-
-      h3 {
-        margin: 0;
-        font-size: 1.2em;
-        color: #333;
-      }
-
-      p {
-        margin: 5px 0 0 0;
-        @extend .text-light;
-        font-size: 0.9em;
-      }
     }
   }
 
