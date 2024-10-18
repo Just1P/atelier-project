@@ -38,15 +38,14 @@ const Step3Form = ({ formData, handleChange }: Step3FormProps) => {
 
       <div className="form-group">
         <label htmlFor="bio">Bio / Description</label>
-        <textarea
+        <input
           id="bio"
           name="bio"
           value={formData.bio}
           onChange={handleChange}
           placeholder="Lorem ipsum"
           className="form-textarea"
-          rows={4}
-        ></textarea>
+        ></input>
       </div>
     </div>
   );
