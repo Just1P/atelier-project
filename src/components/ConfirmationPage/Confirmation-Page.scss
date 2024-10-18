@@ -32,7 +32,7 @@ h2 {
 
 p {
   font-size: 16px;
-  color: #666;
+  @extend .text-light;
   margin: 4px 0;
 }
 
