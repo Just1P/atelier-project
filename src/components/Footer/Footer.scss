@@ -1,3 +1,8 @@
+// src/components/component-css/Footer-css/Footer.scss
+
+$active-color: $primary-color; // Couleur utilisée pour les étapes
+$previous-text-color: $text-light;
+
 footer {
   background-color: #fff; // Optionnel, si le footer doit avoir une couleur de fond spécifique
   padding-top: 35px;

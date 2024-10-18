@@ -1,8 +1,8 @@
 // src/components/component-css/Header.scss
 
-$active-color: #a785f7;
+$active-color: $primary-color;
 $inactive-color: #e0e0e0;
-$text-color: #cccddf;
+$text-color: $text-light;
 $active-text-color: #333;
 
 .header {

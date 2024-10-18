@@ -30,7 +30,7 @@
     transition: border-color 0.3s ease;
 
     &:focus {
-      border-color: #a785f7; // La couleur que tu as choisie pour les étapes
+      border-color: $primary-color; // La couleur que tu as choisie pour les étapes
       outline: none;
     }
 
