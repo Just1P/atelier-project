@@ -8,13 +8,12 @@ type ConfirmationPageProps = {
 
 const ConfirmationPage = ({ name, email }: ConfirmationPageProps) => {
   return (
-    <div className="confirmation-container no-background">
-      <div className="background-circles"></div>
+    <div className="confirmation-container">
       <div className="confirmation-content">
         <img src={successIcon} alt="Success" className="success-icon" />
-        <h2>Congrats {name}</h2>
-        <p>Registration Successful</p>
-        <p>Email confirmation sent to {email}</p>
+        <h3>Congrats {name}</h3>
+        <h3>Registration Successful</h3>
+        <h3>Email confirmation sent to {email}</h3>
       </div>
     </div>
   );

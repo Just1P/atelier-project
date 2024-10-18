@@ -79,11 +79,11 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
+    <>
       {isSubmitted ? (
         <ConfirmationPage name={formData.name} email={formData.email} />
       ) : (
-        <>
+        <div className="app-container">
           <Header step={step} totalSteps={totalSteps} />
           <Form
             step={step}
@@ -98,9 +98,9 @@ const App = () => {
             handlePrevious={handlePrevious}
             handleSubmit={handleSubmit}
           />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

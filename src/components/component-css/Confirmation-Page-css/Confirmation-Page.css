@@ -1,45 +1,41 @@
-@charset "UTF-8";
-/* src/components/component-css/Confirmation-Page-css/Confirmation-Page.css */
-/* Conteneur principal de la page de confirmation */
 .confirmation-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh; /* Centrage vertical */
-  position: relative;
-  overflow: hidden;
-  background: none; /* Supprime tout fond appliqué ici */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 100vh;
 }
 
-/* Contenu de la confirmation */
 .confirmation-content {
-  text-align: center;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background: white; /* Couleur de fond par défaut */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .success-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 143px;
+  height: 143px;
+  margin-bottom: 75px;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 24px;
   color: #333;
+  margin-bottom: 8px;
 }
 
 p {
-  font-size: 1em;
+  font-size: 16px;
   color: #666;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
-/* Supprime le fond blanc pour app-container uniquement sur la page de confirmation */
-.confirmation-container.no-background .app-container {
-  background-color: transparent;
-  box-shadow: none; /* Supprime également les ombres si nécessaire */
+h3 {
+  margin: 0;
 }/*# sourceMappingURL=Confirmation-Page.css.map */
