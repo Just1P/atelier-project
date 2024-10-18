@@ -1,5 +1,5 @@
-import voidCard from "../../assets/images/card-void.jpg";
-import completedCard from "../../assets/images/card-completed.jpg";
+import voidCard from "../../../assets/images/card-void.jpg";
+import completedCard from "../../../assets/images/card-completed.jpg";
 import "../Step1Form/Form1.css";
 
 type Step1FormProps = {

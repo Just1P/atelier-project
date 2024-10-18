@@ -1,4 +1,4 @@
-import "./component-css/Header-css/Header.css";
+import "./Header.css";
 
 type HeaderProps = {
   step: number;
