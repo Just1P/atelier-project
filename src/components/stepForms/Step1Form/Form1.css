@@ -8,10 +8,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: none;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   padding: 15px;
   cursor: pointer;
-  width: 100%;
   background-color: #fff;
   text-align: left;
 }
@@ -26,12 +30,12 @@
   display: flex;
   flex-direction: column;
 }
-.account-selection-container .account-option .account-details h3 {
+.account-selection-container .account-option h3 {
   margin: 0;
   font-size: 1.2em;
   color: #333;
 }
-.account-selection-container .account-option .account-details p {
+.account-selection-container .account-option p {
   margin: 5px 0 0 0;
   color: #666;
   font-size: 0.9em;

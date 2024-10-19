@@ -1,0 +1,40 @@
+@import "../../styles/variables-css/variables.scss";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  .form-textarea {
+    resize: none;
+  }
+}

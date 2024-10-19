@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap";
 body {
   display: flex;
   height: 100%;
@@ -31,12 +31,14 @@ label {
   align-items: center;
   text-align: center;
   padding: 32px 32px 0 32px;
+  border: none;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   background: white;
   box-sizing: border-box;
-}
-.app-container.no-background {
-  background-color: transparent;
 }
 
 header,
@@ -67,7 +69,12 @@ a:hover {
 }
 
 button {
+  border: none;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;

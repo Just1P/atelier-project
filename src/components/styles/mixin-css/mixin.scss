@@ -1,6 +1,6 @@
-
 @mixin button-base {
-  @include button-base;
+  border: none;
+  border-radius: 8px;
   font-family: $font-family;
   padding: 0.6em 1.2em;
   cursor: pointer;
@@ -12,8 +12,4 @@
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
-}
-
-.text-light {
-  color: $text-light;
 }

@@ -11,16 +11,21 @@ footer .button-container {
 }
 footer .next-button,
 footer .done-button {
+  width: 80px;
   background-color: #a785f7;
   color: white;
   border: none;
+  border: none;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 footer .next-button:hover,
 footer .done-button:hover {

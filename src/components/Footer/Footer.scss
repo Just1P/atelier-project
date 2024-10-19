@@ -1,3 +1,6 @@
+@import "../../components/styles/variables-css/variables.scss";
+@import "../../components/styles/mixin-css/mixin.scss";
+
 $active-color: $primary-color;
 $previous-text-color: $text-light;
 
@@ -15,6 +18,7 @@ footer {
 
   .next-button,
   .done-button {
+    width: 80px;
     background-color: $active-color;
     color: white;
     border: none;
@@ -24,7 +28,6 @@ footer {
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
       background-color: lighten($active-color, 10%);

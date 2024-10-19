@@ -1,3 +1,5 @@
+@import "../../styles/mixin-css/mixin.scss";
+@import "../../styles/variables-css/variables.scss";
 .account-selection-container {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,6 @@
     @include button-base;
     padding: 15px;
     cursor: pointer;
-    width: 100%;
     background-color: #fff;
     text-align: left;
 
@@ -25,6 +26,18 @@
     .account-details {
       display: flex;
       flex-direction: column;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    p {
+      margin: 5px 0 0 0;
+      color: #666;
+      font-size: 0.9em;
     }
   }
 
