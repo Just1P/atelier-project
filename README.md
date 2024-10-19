@@ -22,11 +22,15 @@ Cette application React permet de gérer un formulaire d'inscription multi-étap
 
 1. **Cloner le dépôt :**
 
-   ```bash
-   git clone https://github.com/Just1P/react-project.git
-   cd react-project
+```bash
+git clone https://github.com/Just1P/react-project.git
 
-   ```
+```
+
+```bash
+cd react-project
+
+```
 
 2. **Installer les dépendances:**
 
