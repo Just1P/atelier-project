@@ -18,7 +18,7 @@ const Step3Form = ({ formData, handleChange }: Step3FormProps) => {
           name="age"
           value={formData.age}
           onChange={handleChange}
-          placeholder="John Doe"
+          placeholder="24"
           className="form-input"
         />
       </div>
@@ -31,7 +31,7 @@ const Step3Form = ({ formData, handleChange }: Step3FormProps) => {
           name="interest"
           value={formData.interest}
           onChange={handleChange}
-          placeholder="Frontend"
+          placeholder="Your areas of interest"
           className="form-input"
         />
       </div>
